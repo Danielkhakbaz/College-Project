@@ -1,0 +1,29 @@
+.rmdp-calendar {
+  background: white !important;
+}
+.rmdp-input {
+  min-width: 0px !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  position: relative !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -ms-appearance: none !important;
+  appearance: none !important;
+  transition-property: var(--chakra-transition-property-common) !important;
+  transition-duration: var(--chakra-transition-duration-normal) !important;
+  font-size: 12px !important;
+  -webkit-padding-start: var(--chakra-space-4) !important;
+  padding-inline-start: var(--chakra-space-4) !important;
+  -webkit-padding-end: var(--chakra-space-4) !important;
+  padding-inline-end: var(--chakra-space-4) !important;
+  height: var(--chakra-sizes-10) !important;
+  border-radius: var(--chakra-radii-md) !important;
+  border: 1px solid !important;
+  border-color: inherit !important;
+  background: inherit !important;
+}
+.rmdp-container,
+.rmdp-input {
+  width: 100% !important;
+}

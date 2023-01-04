@@ -1,0 +1,17 @@
+@font-face {
+  font-family: IRANSans;
+  src: url(assets/fonts/iran-sans.ttf);
+}
+
+* {
+  font-family: IRANSans !important;
+  scroll-behavior: smooth;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

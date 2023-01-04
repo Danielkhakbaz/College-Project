@@ -1,0 +1,30 @@
+@-webkit-keyframes mover {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+@keyframes mover {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+
+.landing__background {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(247, 247, 247, 0.52),
+      #319795
+    ),
+    url("assets/images/hospital/hospital-image.jpeg");
+}
+.arrow__icon {
+  position: relative;
+  -webkit-animation: mover 0.9s infinite alternate;
+  animation: mover 0.9s infinite alternate;
+}
