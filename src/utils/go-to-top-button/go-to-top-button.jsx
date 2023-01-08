@@ -3,10 +3,8 @@ import { IconButton, useColorModeValue } from "@chakra-ui/react";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
 const GoToTopButton = () => {
-  const [
-    displayAndPointerOfGoToTopButton,
-    setDisplayAndPointerOfGoToTopButton,
-  ] = useState(["none", "none"]);
+  const [displayAndCursorOfGoToTopButton, setDisplayAndCursorOfGoToTopButton] =
+    useState(["none", "none"]);
 
   const gotToTopButtonColor = useColorModeValue("white", "black");
   const gotToTopButtonColorScheme = useColorModeValue("blackAlpha", "teal");
@@ -19,9 +17,9 @@ const GoToTopButton = () => {
     const { pageYOffset, innerHeight } = window;
 
     if (pageYOffset > innerHeight / 2) {
-      setDisplayAndPointerOfGoToTopButton(["flex", "pointer"]);
+      setDisplayAndCursorOfGoToTopButton(["flex", "pointer"]);
     } else {
-      setDisplayAndPointerOfGoToTopButton(["none", "initial"]);
+      setDisplayAndCursorOfGoToTopButton(["none", "initial"]);
     }
   };
 
@@ -37,13 +35,13 @@ const GoToTopButton = () => {
         color={gotToTopButtonColor}
         colorScheme={gotToTopButtonColorScheme}
         onClick={handleGoToTopButton}
-        display={displayAndPointerOfGoToTopButton[0]}
+        display={displayAndCursorOfGoToTopButton[0]}
         position="fixed"
         bottom={{ md: "25px", lg: "75px" }}
         right={{ md: "25px", lg: "40px" }}
         textAlign="center"
         transition="0.3s"
-        cursor={displayAndPointerOfGoToTopButton[1]}
+        cursor={displayAndCursorOfGoToTopButton[1]}
         padding={{ md: "0.5rem 0.5rem", lg: "1.5rem 1.5rem" }}
         zIndex={999}
       />

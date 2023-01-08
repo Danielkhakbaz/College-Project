@@ -4,13 +4,13 @@ import {
   Flex,
   Heading,
   Text,
+  Button,
+  ButtonGroup,
   Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  ButtonGroup,
-  Button,
   useColorMode,
 } from "@chakra-ui/react";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
